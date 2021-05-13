@@ -27,12 +27,6 @@ public class PhpSteps extends PageSteps {
         Injector._page(PhpTravellsHomePage.class).completarCheckOut();
         Injector._page(PhpTravellsHomePage.class).addAChild();
         Injector._page(PhpTravellsHomePage.class).clickBtnSearch();
-
-    }
-
-    @And("The client clicks on the First Hotel Option")
-    public void theClientClicksOnTheFirstHotelOption() {
-       // Injector._page(PhpTravellsHomePage.class).clickFirstHotel();
     }
 
     @And("The client selects the Room")
@@ -50,18 +44,18 @@ public class PhpSteps extends PageSteps {
         Injector._page(PhpTravellsDetailPage.class).completeForm(fName, lName, email, cNumber, adress, country);
     }
 
-    @And("The client selects an extra champagne")
+    @And("The client selects an extra")
     public void theClientSelectsAnExtraChampagne() {
         //Injector._page(PhpTravellsDetailPage.class).selectExra();
     }
 
-    @And("The client clicks on the Confirm this booking buton")
-    public void theClientClicksOnTheConfirmThisBookingButon() {
+    @And("The client clicks on the Confirm this booking button")
+    public void theClientClicksOnTheConfirmThisBookingButton() {
         Injector._page(PhpTravellsDetailPage.class).clickConfirm();
     }
 
-    @And("The client clicks on the Pay on Arrival buton")
-    public void theClientClicksOnThePayOnArrivalButon() {
+    @And("The client clicks on the Pay on Arrival button")
+    public void theClientClicksOnThePayOnArrivalButton() {
         Injector._page(PhpTravellsPaymentPage.class).clickPayOnArrival();
     }
 
